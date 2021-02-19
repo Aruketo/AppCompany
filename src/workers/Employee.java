@@ -1,8 +1,6 @@
 package workers;
 
 import utilities.Age;
-import java.util.ArrayList;
-import java.util.List;
 
 public class Employee
 {
@@ -40,7 +38,7 @@ public class Employee
         System.out.println("---------------------------------------");
         System.out.println("Imię: " + name);
         System.out.println("Nazwisko: " + surName);
-        System.out.println("Wiek: " + age);
+        System.out.println("Wiek: " + age.getAge());
         System.out.println("Wynagrodzenie w pln: " + salary + " " + "pln");
         System.out.println("---------------------------------------");
     }

@@ -9,17 +9,18 @@ public class Utils
     Scanner myScanner = new Scanner(System.in);
     public static void viewOptions()
     {
-        System.out.println("---------------------------------");
+
         System.out.println("Witaj w mojej aplikacji!");
-        System.out.println("Wybierz interesującą cię opcję.");
-        System.out.println("");
+        System.out.println("---------------------------------");
         System.out.println("1. Dodaj pracowników.");
         System.out.println("2. Wyświetl pracowników.");
         System.out.println("3. Wyszukaj pracownika.");
         System.out.println("4. Usuń pracownika.");
         System.out.println("5. Wyjdź z aplikacji.");
         System.out.println("---------------------------------");
+        System.out.println("Wybierz interesującą cię opcję.");
     }
+
 
     public void addEmployee()
     {
@@ -30,6 +31,7 @@ public class Utils
         String surName = myScanner.next();
 
         System.out.println("Podaj wiek pracownika:");
+        //int age = myScanner.nextInt();
         Age age = new Age(myScanner.nextInt());
 
 
