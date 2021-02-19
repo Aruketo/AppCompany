@@ -1,7 +1,9 @@
 package utilities;
 
 import workers.Employee;
+import javax.xml.namespace.QName;
 import java.util.*;
+import utilities.Age;
 public class Utils
 {
     private List<Employee> employees = new ArrayList<>();
@@ -30,6 +32,7 @@ public class Utils
         String surName = myScanner.next();
 
         System.out.println("Podaj wiek pracownika:");
+        //int age = myScanner.nextInt();
         Age age = new Age(myScanner.nextInt());
 
 

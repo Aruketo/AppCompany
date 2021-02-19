@@ -1,11 +1,11 @@
 package utilities;
 
 public class Age {
-    private int age;
+    private final int age;
 
-    public Age(int age) {
+    public Age(final int age) {
         if (age < 0 || age > 130) {
-            throw new IllegalArgumentException("Podany wiek jest niepoprawny.");
+            throw new IllegalArgumentException("Podany wiek jest niepoprawny");
         }
         this.age = age;
     }
